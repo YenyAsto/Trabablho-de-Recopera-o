@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #025309;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h1 {
+    color: white;
+    font-style: italic;
+    font-size: 35px;
+    padding: 30px;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 15px;
+    color: white;
+}
+
+#pagina {
+    display: flex;
+    margin: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 0.85;
+}
+
+aside {
+    flex: 0.15;
+    border: 1px solid #cbcccb;
+    border-radius: 2%;
+    padding: 15px;
+}
+
+aside > h2, aside > h4 {
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+aside > ul {
+    list-style: none;
+    padding: 5px;
+}
+
+aside > ul > li {
+    padding: 4px;
+}
+
+aside > ul > li:hover {
+    border-bottom: 1px solid #025309;
+    padding: 10px;
+    background-color: #025309;
+    color: white;
+}
+
+.container {
+    display: flex;
+    margin-right: 15px;
+    padding: 25px;
+}
+
+.container:first-child {
+    border-bottom: 1px solid #cbcccb;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#promocoes {
+    flex: 0.8;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#anuncios {
+    flex: 0.2;
+    background-color: #cbcccb;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#anuncios > p {
+    text-align: center;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.produto > h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.produto > .label {
+    background-color: #025303;
+    color: white;
+    text-align: center;
+    border-radius: 2%;
+    max-width: 180px;
+    padding: 5px;
+}
+
+footer {
+    background-color: #025309;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+footer > address {
+    text-align: right;
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    header > nav > ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #pagina {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .produtos {
+        justify-content: center;
+    }
+    
+}
